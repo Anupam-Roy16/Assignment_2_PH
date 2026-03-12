@@ -239,7 +239,7 @@ font-size: 2rem;
     /* border: 3px solid blue; */
 }
 
-.episode-title{
+.episode-title,.host-title{
     margin-top: 60px;
     font-size: 2rem;
     font-weight: 600;
@@ -283,4 +283,98 @@ font-size: 2rem;
     display: flex;
     gap:10px;
     margin-top: 20px;
+}
+
+/* host related styles */
+.host-card{
+    margin-bottom: 60px;
+    background-color: #351165;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px;
+    gap: 16px;
+}
+
+.host-name{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.host-details{
+    font-size: .8rem;
+    line-height: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.social{
+    height: 50px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    /* justify-content: flex-start; */
+}
+
+.social a {
+    /* 1. Create the circle shape */
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* 2. Style the border */
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    /* 3. Center the icon inside the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* 4. Remove default link styling */
+    /* text-decoration: none; */
+    /* transition: all 0.3s ease; */
+}
+
+
+/* footer related styles */
+
+footer{
+    /* text-align: center; */
+    background-image: url("image/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#FFFFFF;
+    margin-bottom: 15px;
+    padding-top: 80px;
+    background-position: center;
+}
+footer h1 ,.copyright{
+    text-align: center;
+}
+footer h1{
+    font-size: 4rem;
+    font-weight: 600;
+    /* margin-bottom: 30px; */
+}
+.element{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.img-dec{
+    font-weight: 200;
+    font-size: .75rem;   
+}
+.footer-social{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 29px;
+    justify-content: center;
+    /* color:#FFFFFF; */
+} 
+.copyright{
+    font-weight: 150;
+    font-size: .9rem;
+    padding-bottom: 100px;
+    /* text-align: center; */
 }
