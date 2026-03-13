@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Container B is the anchor */
+        .container-B {
+            position: relative;
+            width: 100%;
+            max-width: 1366px;
+            margin: 0 auto;
+
+            /* 1. Set the background image */
+            background-image: url("image/hero-bg.png");
+            background-size: cover;
+            background-position: center;
+
+            /* 2. CRITICAL: Match the aspect ratio of Image B (e.g., 16/9 or 4/3) */
+            /* If Image B is 1920x1080, use 16/9. If it's 1000x1000, use 1/1 */
+            aspect-ratio: 16 / 9;
+            /* position: relative; */
+            /* background-color: antiquewhite; */
+            /* width: 100%; */
+            /* Adjust this to control overall size */
+            /* max-width: 1366px; */
+            /* Limits size on large monitors */
+            /* margin: 0 auto; */
+
+        }
+
+        .base-img {
+            width: 100%;
+            /* display: block; */
+        }
+
+        /* Positioning Image A inside B */
+        .wrapper-A {
+            position: absolute;
+            /* Use percentages to pick the exact spot on Image B */
+            top: 15%;
+            left: 39%;
+            width: 22%;
+            /* Scale of A relative to B */
+        }
+
+        /* Positioning Image C inside A */
+        .wrapper-C {
+            position: absolute;
+            /* Use percentages to pick the exact spot on Image A */
+            top: 20%;
+            left: 35%;
+            width: 29%;
+            /* Scale of C relative to A */
+        }
+
+        .wrapper-D {
+            border: none;
+            border-radius: 25px;
+            width: 45px;
+            display: flex;
+            height: 25px;
+            background-color: #00ff88;
+            position: absolute;
+            top: 10%;
+            left: 80%;
+            /* padding: 1px; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper-D p {
+            font-size: .75em;
+            font-weight: 800;
+            color: #1A0b2e;
+            /* margin: 0 auto; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container-B">
+        <!-- <img src="image/hero-bg.png" class="base-img"> -->
+
+        <div class="wrapper-A">
+            <img src="image/hero-circle.png" class="base-img">
+
+            <div class="wrapper-C">
+                <img src="image/microphone.png" class="base-img">
+
+            </div>
+            <div class="wrapper-D">
+                <!-- <div class="badge"> -->
+                <p>NEW</p>
+                <!-- </div> -->
+            </div>
+
+        </div>
+         <h1 class="white-title">TechWave</h1>
+            <p class="white-title">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+            <button class="btn">
+                <i class="fa-brands fa-spotify"></i> Listen to spotify
+            </button>
+            <button class="btn sub-btn">
+                <i class="fa-regular fa-envelope"></i> Subscribe
+            </button>
+    </div>
+</body>
+
+</html>
